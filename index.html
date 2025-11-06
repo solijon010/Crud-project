@@ -25,7 +25,11 @@
     <section class="p-3">
       <div class="row">
         <div class="col-12">
-          <button class="btn btn-primary">
+          <button
+            class="btn btn-primary"
+            data-bs-toggle="modal"
+            data-bs-target="#userForm"
+          >
             New User <i class="bi bi-people"></i>
           </button>
         </div>
@@ -50,38 +54,127 @@
               </tr>
             </thead>
             <tbody id="data">
-              <td>1</td>
-              <td>
-                <img
-                  src="./images/jpeg/bu men.jpg"
-                  alt="My picture"
-                  width="100"
-                  height="90"
-                />
-              </td>
-              <td>Solijon</td>
-              <td>22</td>
-              <td>Andijon</td>
-              <td>Magister</td>
-              <td>Playing football</td>
-              <td>solijonikromov001@gmail.com</td>
-              <td>+998995560004</td>
-              <td>
-                <button class="btn btn-success">
-                  <i class="bi bi-eye"></i>
-                </button>
-                <button class="btn btn-primary">
-                  <i class="bi bi-pencil-square"></i>
-                </button>
-                <button class="btn btn-danger">
-                  <i class="bi bi-trash"></i>
-                </button>
-              </td>
+              <tr>
+                <td>1</td>
+                <td>
+                  <img
+                    src="./images/jpeg/bu men.jpg"
+                    alt="My picture"
+                    width="50"
+                    height="50"
+                  />
+                </td>
+                <td>Solijon</td>
+                <td>22</td>
+                <td>Andijon</td>
+                <td>Magister</td>
+                <td>Playing football</td>
+                <td>solijonikromov001@gmail.com</td>
+                <td>+998995560004</td>
+                <td>
+                  <button class="btn btn-success">
+                    <i class="bi bi-eye"></i>
+                  </button>
+                  <button class="btn btn-primary">
+                    <i class="bi bi-pencil-square"></i>
+                  </button>
+                  <button class="btn btn-danger">
+                    <i class="bi bi-trash"></i>
+                  </button>
+                </td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>
+                  <img
+                    src="./images/jpeg/bu men.jpg"
+                    alt="My picture"
+                    width="50"
+                    height="50"
+                  />
+                </td>
+                <td>Solijon</td>
+                <td>22</td>
+                <td>Andijon</td>
+                <td>Magister</td>
+                <td>Playing football</td>
+                <td>solijonikromov001@gmail.com</td>
+                <td>+998995560004</td>
+                <td>
+                  <button class="btn btn-success">
+                    <i class="bi bi-eye"></i>
+                  </button>
+                  <button class="btn btn-primary">
+                    <i class="bi bi-pencil-square"></i>
+                  </button>
+                  <button class="btn btn-danger">
+                    <i class="bi bi-trash"></i>
+                  </button>
+                </td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>
+                  <img
+                    src="./images/jpeg/bu men.jpg"
+                    alt="My picture"
+                    width="50"
+                    height="50"
+                  />
+                </td>
+                <td>Solijon</td>
+                <td>22</td>
+                <td>Andijon</td>
+                <td>Magister</td>
+                <td>Playing football</td>
+                <td>solijonikromov001@gmail.com</td>
+                <td>+998995560004</td>
+                <td>
+                  <button class="btn btn-success">
+                    <i class="bi bi-eye"></i>
+                  </button>
+                  <button class="btn btn-primary">
+                    <i class="bi bi-pencil-square"></i>
+                  </button>
+                  <button class="btn btn-danger">
+                    <i class="bi bi-trash"></i>
+                  </button>
+                </td>
+              </tr>
             </tbody>
           </table>
         </div>
       </div>
     </section>
+
+    <!-- Info:Modal Form -->
+    <div class="modal fade" id="userForm">
+      <div class="modal-dialog modal-centered modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title">Fill the Form</h4>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismis="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+
+            <form action="#" id="myForm">
+                <div class="card imgholder">
+                    <label for="imgInput" class="upload">
+                        <input type="file" name="" id="imgInput">
+                        <i class="bi bi-plus-circle-dotted"></i>
+                    </label>
+                    <img src="./images/png/profile.png" alt="" width="200" height="200">
+                </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script
