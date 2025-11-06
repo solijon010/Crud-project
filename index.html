@@ -161,16 +161,58 @@
             ></button>
           </div>
           <div class="modal-body">
-
             <form action="#" id="myForm">
-                <div class="card imgholder">
-                    <label for="imgInput" class="upload">
-                        <input type="file" name="" id="imgInput">
-                        <i class="bi bi-plus-circle-dotted"></i>
-                    </label>
-                    <img src="./images/png/profile.png" alt="" width="200" height="200">
+              <div class="card imgholder">
+                <label for="imgInput" class="upload">
+                  <input type="file" name="" id="imgInput" />
+                  <i class="bi bi-plus-circle-dotted"></i>
+                </label>
+                <img
+                  src="./images/png/profile.png"
+                  alt=""
+                  width="200"
+                  height="200"
+                />
+              </div>
+              <div class="inputField">
+                <div>
+                  <label for="name">Name:</label>
+                  <input type="text" id="name" />
                 </div>
+                <div>
+                  <label for="age">Age:</label>
+                  <input type="number" id="age" />
+                </div>
+                <div>
+                  <label for="city">City:</label>
+                  <input type="text" id="city" />
+                </div>
+                <div>
+                  <label for="email">E-mail:</label>
+                  <input type="email" id="email" />
+                </div>
+                <div>
+                  <label for="phone">Number:</label>
+                  <input type="text" id="phone" minlength="11" maxlength="11" />
+                </div>
+                <div>
+                  <label for="post">Post:</label>
+                  <input type="text" id="post" />
+                </div>
+                <div>
+                  <label for="sDate">Start Date:</label>
+                  <input type="date" id="sDate" />
+                </div>
+              </div>
             </form>
+          </div>
+
+          <div class="modal-footer">
+            <button
+              type="submit"
+              form="myForm"
+              class="btn btn-primary submit"
+            >Submit</button>
           </div>
         </div>
       </div>
