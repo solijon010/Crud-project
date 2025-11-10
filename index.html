@@ -23,7 +23,7 @@
     <link rel="stylesheet" href="./css/main.css" />
   </head>
   <body>
-     <section class="p-3">
+    <section class="p-3">
       <div class="row">
         <div class="col-12">
           <button
@@ -56,14 +56,65 @@
               </tr>
             </thead>
 
-            <tbody id="data"></tbody>
+            <tbody id="data">
+               <tr class="employeeDetails">
+    <td>1</td>
+    <td><img src="./image/profile.png" width="50" height="50"></td>
+    <td>Solijon</td>
+    <td>25</td>
+    <td>New York</td>
+    <td>john@example.com</td>
+    <td>12345678901</td>
+    <td>Developer</td>
+    <td>2024-01-01</td>
+    <td>
+      <button class="btn btn-success"><i class="bi bi-eye"></i></button>
+      <button class="btn btn-primary"><i class="bi bi-pencil-square"></i></button>
+      <button class="btn btn-danger"><i class="bi bi-trash"></i></button>
+    </td>
+  </tr>
+
+  <tr class="employeeDetails">
+    <td>2</td>
+    <td><img src="./image/profile.png" width="50" height="50"></td>
+    <td>Anna Smith</td>
+    <td>30</td>
+    <td>London</td>
+    <td>anna@example.com</td>
+    <td>98765432109</td>
+    <td>Designer</td>
+    <td>2024-02-10</td>
+    <td>
+      <button class="btn btn-success"><i class="bi bi-eye"></i></button>
+      <button class="btn btn-primary"><i class="bi bi-pencil-square"></i></button>
+      <button class="btn btn-danger"><i class="bi bi-trash"></i></button>
+    </td>
+  </tr>
+
+  <tr class="employeeDetails">
+    <td>3</td>
+    <td><img src="./image/profile.png" width="50" height="50"></td>
+    <td>Mike Jordan</td>
+    <td>28</td>
+    <td>Dubai</td>
+    <td>mike@example.com</td>
+    <td>11223344556</td>
+    <td>Manager</td>
+    <td>2024-03-05</td>
+    <td>
+      <button class="btn btn-success"><i class="bi bi-eye"></i></button>
+      <button class="btn btn-primary"><i class="bi bi-pencil-square"></i></button>
+      <button class="btn btn-danger"><i class="bi bi-trash"></i></button>
+    </td>
+  </tr>
+            </tbody>
           </table>
         </div>
       </div>
     </section>
 
     <!-- Info:User Form Modal -->
-     <div class="modal fade" id="userForm">
+    <div class="modal fade" id="userForm">
       <div class="modal-dialog modal-dialog-centered modal-lg">
         <div class="modal-content">
           <div class="modal-header">
@@ -83,13 +134,7 @@
                   <input type="file" name="" id="imgInput" />
                   <i class="bi bi-plus-circle-dotted"></i>
                 </label>
-                <img
-                  src="./profile.png"
-                  alt=""
-                  width="200"
-                  height="200"
-                  class="img"
-                />
+                <img src="C:\Users\Ikromov Solijon\Desktop\Najot ta'lim\5 Oy ( JavaScript )\7-dars\profile.png" width="200" height="200" class="img" />
               </div>
 
               <div class="inputField">
@@ -149,7 +194,7 @@
     </div>
 
     <!-- Info:  Read Data Modal -->
-     <div class="modal fade" id="readData">
+    <div class="modal fade" id="readData">
       <div class="modal-dialog modal-dialog-centered modal-lg">
         <div class="modal-content">
           <div class="modal-header">
@@ -166,7 +211,7 @@
             <form action="#" id="myForm">
               <div class="card imgholder">
                 <img
-                  src="./profile.png"
+                  src="C:\Users\Ikromov Solijon\Desktop\Najot ta'lim\5 Oy ( JavaScript )\7-dars\profile.png"
                   alt=""
                   width="200"
                   height="200"
@@ -217,7 +262,7 @@
       </div>
     </div>
 
-   <!-- Option 1: Bootstrap Bundle with Popper -->
+    <!-- Option 1: Bootstrap Bundle with Popper -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
