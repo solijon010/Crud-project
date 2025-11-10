@@ -12,7 +12,8 @@
       integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
       crossorigin="anonymous"
     />
-    <!-- Info: Bootstrap 5 icon cdn -->
+
+    <!-- Bootstrap Icons -->
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
@@ -22,11 +23,11 @@
     <link rel="stylesheet" href="./css/main.css" />
   </head>
   <body>
-    <section class="p-3">
+     <section class="p-3">
       <div class="row">
         <div class="col-12">
           <button
-            class="btn btn-primary"
+            class="btn btn-primary newUser"
             data-bs-toggle="modal"
             data-bs-target="#userForm"
           >
@@ -34,6 +35,7 @@
           </button>
         </div>
       </div>
+
       <div class="row">
         <div class="col-12">
           <table
@@ -41,125 +43,39 @@
           >
             <thead>
               <tr>
-                <th>№</th>
+                <th>S.No</th>
                 <th>Picture</th>
                 <th>Name</th>
                 <th>Age</th>
                 <th>City</th>
-                <th>Job</th>
-                <th>Hobby</th>
                 <th>Email</th>
                 <th>Phone</th>
+                <th>Post</th>
                 <th>Start Date</th>
+                <th>Action</th>
               </tr>
             </thead>
-            <tbody id="data">
-              <tr>
-                <td>1</td>
-                <td>
-                  <img
-                    src="./images/jpeg/bu men.jpg"
-                    alt="My picture"
-                    width="50"
-                    height="50"
-                  />
-                </td>
-                <td>Solijon</td>
-                <td>22</td>
-                <td>Andijon</td>
-                <td>Magister</td>
-                <td>Playing football</td>
-                <td>solijonikromov001@gmail.com</td>
-                <td>+998995560004</td>
-                <td>
-                  <button class="btn btn-success">
-                    <i class="bi bi-eye"></i>
-                  </button>
-                  <button class="btn btn-primary">
-                    <i class="bi bi-pencil-square"></i>
-                  </button>
-                  <button class="btn btn-danger">
-                    <i class="bi bi-trash"></i>
-                  </button>
-                </td>
-              </tr>
-              <tr>
-                <td>2</td>
-                <td>
-                  <img
-                    src="./images/jpeg/bu men.jpg"
-                    alt="My picture"
-                    width="50"
-                    height="50"
-                  />
-                </td>
-                <td>Solijon</td>
-                <td>22</td>
-                <td>Andijon</td>
-                <td>Magister</td>
-                <td>Playing football</td>
-                <td>solijonikromov001@gmail.com</td>
-                <td>+998995560004</td>
-                <td>
-                  <button class="btn btn-success">
-                    <i class="bi bi-eye"></i>
-                  </button>
-                  <button class="btn btn-primary">
-                    <i class="bi bi-pencil-square"></i>
-                  </button>
-                  <button class="btn btn-danger">
-                    <i class="bi bi-trash"></i>
-                  </button>
-                </td>
-              </tr>
-              <tr>
-                <td>3</td>
-                <td>
-                  <img
-                    src="./images/jpeg/bu men.jpg"
-                    alt="My picture"
-                    width="50"
-                    height="50"
-                  />
-                </td>
-                <td>Solijon</td>
-                <td>22</td>
-                <td>Andijon</td>
-                <td>Magister</td>
-                <td>Playing football</td>
-                <td>solijonikromov001@gmail.com</td>
-                <td>+998995560004</td>
-                <td>
-                  <button class="btn btn-success">
-                    <i class="bi bi-eye"></i>
-                  </button>
-                  <button class="btn btn-primary">
-                    <i class="bi bi-pencil-square"></i>
-                  </button>
-                  <button class="btn btn-danger">
-                    <i class="bi bi-trash"></i>
-                  </button>
-                </td>
-              </tr>
-            </tbody>
+
+            <tbody id="data"></tbody>
           </table>
         </div>
       </div>
     </section>
 
-    <!-- Info:Modal Form -->
-    <div class="modal fade" id="userForm">
-      <div class="modal-dialog modal-centered modal-lg">
+    <!-- Info:User Form Modal -->
+     <div class="modal fade" id="userForm">
+      <div class="modal-dialog modal-dialog-centered modal-lg">
         <div class="modal-content">
           <div class="modal-header">
             <h4 class="modal-title">Fill the Form</h4>
             <button
               type="button"
               class="btn-close"
-              data-bs-dismis="modal"
+              data-bs-dismiss="modal"
               aria-label="Close"
             ></button>
           </div>
+
           <div class="modal-body">
             <form action="#" id="myForm">
               <div class="card imgholder">
@@ -168,40 +84,49 @@
                   <i class="bi bi-plus-circle-dotted"></i>
                 </label>
                 <img
-                  src="./images/png/profile.png"
+                  src="./profile.png"
                   alt=""
                   width="200"
                   height="200"
+                  class="img"
                 />
               </div>
+
               <div class="inputField">
                 <div>
                   <label for="name">Name:</label>
-                  <input type="text" id="name" />
+                  <input type="text" name="" id="name" required />
                 </div>
                 <div>
                   <label for="age">Age:</label>
-                  <input type="number" id="age" />
+                  <input type="number" name="" id="age" required />
                 </div>
                 <div>
                   <label for="city">City:</label>
-                  <input type="text" id="city" />
+                  <input type="text" name="" id="city" required />
                 </div>
                 <div>
                   <label for="email">E-mail:</label>
-                  <input type="email" id="email" />
+                  <input type="email" name="" id="email" required />
                 </div>
                 <div>
                   <label for="phone">Number:</label>
-                  <input type="text" id="phone" minlength="11" maxlength="11" />
+                  <input
+                    type="text"
+                    name=""
+                    id="phone"
+                    minlength="11"
+                    maxlength="11"
+                    required
+                  />
                 </div>
                 <div>
                   <label for="post">Post:</label>
-                  <input type="text" id="post" />
+                  <input type="text" name="" id="post" required />
                 </div>
                 <div>
                   <label for="sDate">Start Date:</label>
-                  <input type="date" id="sDate" />
+                  <input type="date" name="" id="sDate" required />
                 </div>
               </div>
             </form>
@@ -209,16 +134,90 @@
 
           <div class="modal-footer">
             <button
-              type="submit"
-              form="myForm"
-              class="btn btn-primary submit"
-            >Submit</button>
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+            <button type="submit" form="myForm" class="btn btn-primary submit">
+              Submit
+            </button>
           </div>
         </div>
       </div>
     </div>
 
-    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <!-- Info:  Read Data Modal -->
+     <div class="modal fade" id="readData">
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title">Profile</h4>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+
+          <div class="modal-body">
+            <form action="#" id="myForm">
+              <div class="card imgholder">
+                <img
+                  src="./profile.png"
+                  alt=""
+                  width="200"
+                  height="200"
+                  class="showImg"
+                />
+              </div>
+
+              <div class="inputField">
+                <div>
+                  <label for="name">Name:</label>
+                  <input type="text" name="" id="showName" disabled />
+                </div>
+                <div>
+                  <label for="age">Age:</label>
+                  <input type="number" name="" id="showAge" disabled />
+                </div>
+                <div>
+                  <label for="city">City:</label>
+                  <input type="text" name="" id="showCity" disabled />
+                </div>
+                <div>
+                  <label for="email">E-mail:</label>
+                  <input type="email" name="" id="showEmail" disabled />
+                </div>
+                <div>
+                  <label for="phone">Number:</label>
+                  <input
+                    type="text"
+                    name=""
+                    id="showPhone"
+                    minlength="11"
+                    maxlength="11"
+                    disabled
+                  />
+                </div>
+                <div>
+                  <label for="post">Post:</label>
+                  <input type="text" name="" id="showPost" disabled />
+                </div>
+                <div>
+                  <label for="sDate">Start Date:</label>
+                  <input type="date" name="" id="showsDate" disabled />
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+   <!-- Option 1: Bootstrap Bundle with Popper -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
